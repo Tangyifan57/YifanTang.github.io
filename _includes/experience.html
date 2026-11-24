@@ -1,0 +1,15 @@
+<div class="experience-list">
+{% for item in site.data.experience %}
+<div class="experience-card">
+  <div class="experience-logo"><img src="{{ item.logo | relative_url }}" alt="{{ item.company }} logo" width="110" height="111" loading="lazy"></div>
+  <div class="experience-body">
+    <div class="experience-header"><h3>{{ item.company }}</h3><span class="experience-time"><time datetime="{{ item.start }}">{{ item.dates | split: ' – ' | first }}</time> – <time datetime="{{ item.end }}">{{ item.dates | split: ' – ' | last }}</time></span></div>
+    <div class="experience-company-zh" lang="zh">{{ item.company_zh }}</div>
+    <p class="experience-position">{{ item.role }}</p>
+    <p class="experience-summary">{{ item.overview }}</p>
+    <p class="experience-work">{{ item.responsibilities }}</p>
+    <a class="experience-source" href="{{ item.overview_source }}" target="_blank" rel="noopener noreferrer">Company profile</a>
+  </div>
+</div>
+{% endfor %}
+</div>

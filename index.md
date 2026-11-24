@@ -10,7 +10,7 @@ description: "Yifan Tang (唐逸钒), Ph.D. student at Sun Yat-sen University. R
 
 <div class="profile-card" aria-label="Yifan Tang, Ph.D. student at Sun Yat-sen University">
   <img class="profile-photo" src="{{ site.owner.avatar | prepend: '/images/' | relative_url }}" alt="Portrait of Yifan Tang" width="720" height="844">
-  <div class="profile-caption"><div class="profile-name">Yifan Tang</div><span lang="zh">唐逸钒</span><small>Ph.D. Student<br>Energy &amp; Power Engineering</small></div>
+  <div class="profile-caption"><div class="profile-name">Yifan Tang</div><span lang="zh">唐逸钒</span></div>
 </div>
 
 Hello, I’m Yifan Tang (唐逸钒), a Ph.D. student in Energy and Power Engineering at the School of Advanced Energy, Sun Yat-sen University, advised by Prof. Fujun Niu.
@@ -29,13 +29,19 @@ Previously, I received my master’s degree from Ningbo University, advised by P
 
 {% include education.html %}
 
+## Work Experience
+
+{% include experience.html %}
+
 ## Research Interests
 
-- **Lithium/sodium inventory compensation:** cathode-side and anode-side prelithiation/presodiation.
-- **Cathode structure and surface chemistry:** coupling ion compensation with electrode stabilization.
-- **Electrode–electrolyte interfaces:** SEI formation, interfacial catalysis, and heterointerface reconstruction.
-- **MOF-derived energy-storage materials:** confinement, interlayer engineering, and reaction kinetics.
-- **Mechanistic and practical validation:** operando characterization, theoretical analysis, full cells, and pouch cells.
+<div class="research-interests" markdown="1">
+
+1. Design of MOF-derived anodes for fast-charging sodium-ion batteries and investigation of their energy-storage mechanisms.
+2. Synthesis of high-performance prelithiation/presodiation materials and investigation of their electrochemical reaction mechanisms.
+3. Design of functional cathode compensation additives that couple lithium/sodium replenishment with structural stabilization of high-voltage cathodes.
+
+</div>
 
 [Read more about my research]({{ '/research/' | relative_url }}).
 

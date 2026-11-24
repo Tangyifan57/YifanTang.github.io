@@ -57,7 +57,7 @@ html{scroll-padding-top:145px}body{font-size:16px}
 
 
 /* Portrait, full graphical abstracts, and the personal photo gallery. */
-.about-intro p{text-align:justify;text-justify:inter-word;hyphens:auto;font-weight:400}
+.about-intro p{text-align:justify;text-justify:inter-word;hyphens:none;font-weight:400;line-height:1.65;margin:0 0 .95em}
 .about-intro p strong,.about-intro p b{font-weight:400}
 .profile-card{width:220px;padding:12px 12px 18px}
 .profile-card img.profile-photo{display:block;width:100%;height:auto;border-radius:5px;margin:0 auto 15px;max-width:220px;object-fit:contain}
@@ -91,3 +91,26 @@ html{scroll-padding-top:145px}body{font-size:16px}
   .life-gallery{grid-template-columns:1fr;gap:20px}.life-photo--wide{grid-column:auto}
   .header-nav{width:100%;overflow-x:auto;white-space:nowrap}.header-nav a{flex-shrink:0}.header-nav a:not(:last-child)::after{margin:0 6px}
 }
+
+/* Navigation emphasis and consistent, compact academic prose. */
+.header-nav a{font-weight:700}
+.profile-card span{margin-bottom:0}
+.research-content p,.research-content li{font-weight:400;text-align:justify;text-justify:inter-word;hyphens:none;line-height:1.65}
+.research-content p{margin:0 0 .95em}
+.research-content strong,.research-content b,.research-interests strong,.research-interests b{font-weight:400}
+.research-interests li{font-weight:400;line-height:1.65;margin-bottom:.6em}
+.experience-card{display:grid;grid-template-columns:110px minmax(0,1fr);gap:20px;padding:22px;border:1px solid #e5e9e6;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,.05);margin:16px 0 28px}
+.experience-logo img{display:block;width:110px;height:auto;border-radius:4px;background:#fff}
+.experience-body{min-width:0}
+.experience-header{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:6px 18px}
+.experience-header h3{font-family:Inter,Arial,sans-serif;font-size:17px;line-height:1.45;font-weight:600;margin:0;flex:1 1 280px}
+.experience-time{font-size:14px;line-height:1.75;color:#66736e;white-space:nowrap}
+.experience-company-zh{font-size:14px;line-height:1.65;color:#66736e;margin-top:3px}
+.experience-card p{font-size:14px;line-height:1.65;font-weight:400;margin:10px 0 0}
+.experience-card .experience-position{font-size:16px;margin-top:8px}
+.experience-summary{color:#616965}
+.experience-work{text-align:justify;text-justify:inter-word;hyphens:none}
+.experience-source{display:inline-block;font-size:12px;margin-top:10px;color:#66736e}
+[data-theme="dark"] .experience-card{border-color:#3b4b42;background:#202a25}
+[data-theme="dark"] .experience-time,[data-theme="dark"] .experience-company-zh,[data-theme="dark"] .experience-summary,[data-theme="dark"] .experience-source{color:#b3beb7}
+@media(max-width:480px){.experience-card{grid-template-columns:1fr;gap:12px;padding:16px}.experience-logo img{width:100px}.experience-header h3{flex-basis:100%}.experience-time{white-space:normal}}

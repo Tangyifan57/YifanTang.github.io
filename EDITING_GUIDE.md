@@ -42,6 +42,12 @@ YAML 使用空格缩进，不要使用 Tab。包含冒号的文字用英文双�
 
 首页介绍文字在 `index.md` 的 `about-intro` 区域中编辑；该区域正文使用常规字重并两端对齐。不要删除外层 `<section>` 标记。
 
+## 更新工作经历与研究方向
+
+工作经历在 `_data/experience.yml`，包括公司名称、任职时间、岗位、公司简介和个人职责。公司标志在 `images/companies/`，通过 `logo` 字段关联。`overview_source` 保存公司公开介绍的来源；个人职责以你提供的经历为准。
+
+首页的三点研究兴趣在 `index.md` 的 `research-interests` 区域。研究页详细内容在 `research.md` 的 `research-content` 区域，正文为常规字重、两端对齐，行距为 1.65；小标题仍保留标题样式。
+
 ## 更新 CV
 
 网页 CV 在 `cv.md`。下载 PDF 在 `assets/files/Yifan_Tang_CV.pdf`；上传新版同名 PDF 即可替换。两份需要分别更新。上传前检查手机号和详细地址是否希望公开。
