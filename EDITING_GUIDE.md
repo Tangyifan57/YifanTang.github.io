@@ -50,7 +50,7 @@ YAML 使用空格缩进，不要使用 Tab。包含冒号的文字用英文双�
 
 ## 更新 CV
 
-首页的 View CV 链接跳转到 `cv.md` 对应的 `/cv/` 页面，Download CV (PDF) 入口放在 CV 页面。下载 PDF 在 `assets/files/Yifan_Tang_CV.pdf`；上传新版同名 PDF 即可替换。网页 CV 和 PDF 需要分别维护。上传前检查手机号和详细地址是否希望公开。
+首页的 View CV 链接跳转到 `cv.md` 对应的 `/cv/` 页面，Download CV (PDF) 入口放在 CV 页面。下载 PDF 在 `assets/files/Yifan_Tang_CV.pdf`；上传新版同名 PDF 即可替换，或安装 Python 的 reportlab、PyYAML 后运行 `python3 scripts/build_cv.py`，依据网站教育、工作经历和论文数据重新生成。网页 CV 和 PDF 的研究经历等正文需要分别维护。上传前检查手机号和详细地址是否希望公开。
 
 Research 不出现在顶部导航中；从首页 Research Interests 下方的 Read more about my research 链接进入。该页面仍保留 `/research/` 原网址。
 
