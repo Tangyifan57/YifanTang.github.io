@@ -33,7 +33,8 @@ h('PEER-REVIEWED PUBLICATIONS')
 for a in yaml.safe_load((r/'_data/publications.yml').read_text()):
  if a['status']!='published':continue
  authors=html.escape(a['authors']).replace('Y. Tang','<b>Y. Tang</b>')
- p(f'{authors}. {html.escape(a["title"])}. <b>{a["journal"]}</b> {a["volume"]}, {a["article"]} ({a["year"]}).<br/><link href="https://doi.org/{a["doi"]}">doi:{a["doi"]}</link> · {a["role"]}')
+ citation=', '.join(str(a[k]) for k in ['volume','article'] if a.get(k))
+ p(f'{authors}. {html.escape(a["title"])}. <b>{a["journal"]}</b> {citation} ({a["year"]}).<br/><link href="https://doi.org/{a["doi"]}">doi:{a["doi"]}</link> · {a["role"]}')
 p('# Equal contribution. * Corresponding author.','SmallY')
 h('MANUSCRIPT UNDER REVIEW')
 for a in yaml.safe_load((r/'_data/publications.yml').read_text()):
