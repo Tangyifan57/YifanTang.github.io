@@ -57,7 +57,7 @@ Previously, I received my master’s degree from Ningbo University, advised by P
 
 ## Contact
 
-I welcome discussions and research collaborations in **alkali-ion compensation, electrode interfaces, and advanced battery materials**.
+I welcome discussions and research collaborations in alkali-ion compensation, electrode interfaces, and advanced battery materials.
 
 **Email:** [tangyf57@mail2.sysu.edu.cn](mailto:tangyf57@mail2.sysu.edu.cn)<br>
 **Affiliation:** School of Advanced Energy, Sun Yat-sen University · Shenzhen, China

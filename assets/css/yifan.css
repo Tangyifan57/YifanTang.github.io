@@ -3,7 +3,7 @@
 html{scroll-padding-top:145px}body{font-size:16px}
 .skip-to-main{position:absolute;left:16px;top:-60px;z-index:9999;background:#fff;padding:10px}.skip-to-main:focus{top:10px}
 .sysu-logo{width:260px;height:auto;display:block;padding:2px 0}
-.header-cv{font-family:Inter,Arial,sans-serif;font-size:17px;font-weight:700}
+.header-social__link .academic-icon{display:block;width:24px;height:24px;fill:currentColor}
 [data-theme="dark"] .sysu-logo{background:#fff;border-radius:4px;padding:6px}
 .header-nav a.is-current,.header-nav a:hover{color:var(--yifan-green)}
 .article-wrap h1,.article-wrap h2,.article-wrap h3{color:var(--yifan-green)}
@@ -47,13 +47,12 @@ html{scroll-padding-top:145px}body{font-size:16px}
 
 .publications-grid{grid-template-columns:1fr;gap:18px}.publication-card{display:flex;opacity:1;transform:none}.publication-card:hover{transform:none}.publication-thumb{flex:0 0 180px;aspect-ratio:auto;min-height:155px}.publication-info{flex:1}
 
-.scholar-word{font:600 15px Inter,Arial,sans-serif}.timeline-item .institution-mark{border-color:#9db9a8;box-shadow:none}
+.timeline-item .institution-mark{border-color:#9db9a8;box-shadow:none}
 @media(max-width:480px){.timeline{padding-left:58px}.timeline-item{padding-left:0!important}.publication-thumb{flex-basis:auto;aspect-ratio:16/9}}
 [data-theme="dark"] .mobile-contact-item{color:#e2e7e3}
 [data-theme="dark"] .mobile-contact-item:hover{color:#fff;background:rgba(255,255,255,.08)}
 @media(max-width:480px){.profile-card small br{display:block}.profile-card small br::after{content:none}}
 
-.academic-word{font:600 16px Inter,Arial,sans-serif}
 
 
 /* Portrait, full graphical abstracts, and the personal photo gallery. */

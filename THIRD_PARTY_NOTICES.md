@@ -1,5 +1,7 @@
 # Attribution
 
+The Google Scholar and ResearchGate SVG icons are from Academicons by James Walsh (https://github.com/jpswalsh/academicons), under the SIL Open Font License 1.1. Their path data is unchanged.
+
 This website adapts the MIT-licensed personal website of Siming Deng: https://github.com/LarrySimingDeng/larrysimingdeng.github.io.
 The original MIT license and copyright are retained in LICENSE. The theme is based on Minimal Mistakes by Michael Rose.
 
