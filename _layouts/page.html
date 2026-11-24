@@ -7,17 +7,6 @@
 <head>
 {% include head.html %}
 
-<script src="https://cdn.counter.dev/script.js" data-id="4c8f7caa-2b55-46cd-a995-2c4633303773" data-utcoffset="8"></script>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T5N5JY1E21"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-T5N5JY1E21');
-</script>
-
 <style>
   /* ============================================
      LIQUID GLASS MATERIALS (ported from Tahoe)
@@ -496,9 +485,11 @@
   }
 </style>
 
+<link rel="stylesheet" href="{{ '/assets/css/yifan.css' | relative_url }}">
 </head>
 
 <body class="page" itemscope itemtype="http://schema.org/WebPage">
+  <a class="skip-to-main" href="#main">Skip to content</a>
   {% include chrome-frame.html %}
 
   <!-- Theme toggle icon symbols (defined once, referenced via <use>) -->
@@ -553,23 +544,27 @@
         <!-- Mobile avatar with expandable contact menu (mobile portrait only) -->
         <div class="mobile-avatar-wrapper">
           <button class="mobile-avatar-btn" aria-label="Toggle contact info" aria-expanded="false">
-            <img src="{{ site.url }}/images/{{ site.owner.avatar }}"
+            <img src="{{ site.owner.avatar | prepend: "/images/" | relative_url }}"
                  alt="{{ site.owner.name }}" class="mobile-avatar-img">
           </button>
         </div>
 
-        <a class="header-logo" href="{{ site.url }}" aria-label="{{ site.owner.name }}">
-          <img src="/images/penn-logo.png" class="logo logo--light" alt="University of Pennsylvania">
-          <img src="/images/penn-logo-reverse.png" class="logo logo--dark" alt="University of Pennsylvania">
+        <a class="header-logo" href="{{ "/" | relative_url }}" aria-label="{{ site.owner.name }}">
+          <img src="{{ "/images/sysu-wordmark.jpg" | relative_url }}" class="sysu-logo" alt="Sun Yat-sen University">
         </a>
 
         <div class="header-actions">
           <div class="header-social">
+            <a class="header-social__link header-cv" href="{{ site.owner.cv | relative_url }}" aria-label="Download CV" title="Download CV">CV</a>
             <a class="header-social__link" href="mailto:{{ site.owner.email }}" target="_blank" rel="noopener" aria-label="Email" title="Email"><i class="icon-mail" aria-hidden="true"></i></a>
+{% if site.owner.linkedin %}
             <a class="header-social__link" href="https://linkedin.com/in/{{ site.owner.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><i class="icon-linkedin" aria-hidden="true"></i></a>
+{% endif %}
             <a class="header-social__link" href="https://github.com/{{ site.owner.github }}" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><i class="icon-github" aria-hidden="true"></i></a>
-            <a class="header-social__link" href="{{ site.owner.scholar }}" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar"><i class="ai ai-google-scholar" aria-hidden="true"></i></a>
+            <a class="header-social__link" href="{{ site.owner.scholar }}" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar"><span class="scholar-word">Scholar</span></a>
+{% if site.owner.researchgate %}
             <a class="header-social__link" href="{{ site.owner.researchgate }}" target="_blank" rel="noopener" aria-label="ResearchGate" title="ResearchGate"><i class="ai ai-researchgate" aria-hidden="true"></i></a>
+{% endif %}
           </div>
           <!-- Dark mode toggle (desktop only; mobile uses the contact panel toggle) -->
           <div class="theme-toggle-wrapper theme-toggle-wrapper--header">
@@ -594,7 +589,7 @@
             </label>
           </div>
           <span class="header-avatar" title="{{ site.owner.name }}">
-            <img src="{{ site.url }}/images/{{ site.owner.avatar }}" alt="{{ site.owner.name }}">
+            <img src="{{ site.owner.avatar | prepend: "/images/" | relative_url }}" alt="{{ site.owner.name }}">
           </span>
         </div>
       </div>
@@ -604,7 +599,7 @@
         <nav class="header-nav" role="navigation" aria-label="Primary" itemscope itemtype="http://schema.org/SiteNavigationElement">
           {% capture url %}{{ page.url | remove:'index.html' }}{% endcapture %}
           {% for link in site.links %}
-          <a href="{{ site.url }}{{ link.url }}"{% if url == link.url %} class="is-current"{% endif %}>{{ link.title }}</a>
+          <a href="{{ link.url | relative_url }}"{% if url == link.url %} class="is-current"{% endif %}>{{ link.title }}</a>
           {% endfor %}
         </nav>
       </div>
@@ -615,7 +610,7 @@
 
   <!-- 其他内容保持不变 -->
   {% if page.image.feature %}<div class="image-wrap">
-    <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image" itemprop="primaryImageOfPage">
+    <img src="{{ page.image.feature | prepend: "/images/" | relative_url }}" alt="{{ page.title }} feature image" itemprop="primaryImageOfPage">
   </div>{% endif %}
 
   <div id="main" role="main" itemprop="mainContentOfPage">
@@ -669,6 +664,7 @@
         <span>ResearchGate</span>
       </a>
       {% endif %}
+      <a href="{{ site.owner.cv | relative_url }}" class="mobile-contact-item"><span>Download CV (PDF)</span></a>
     </div>
 
     <!-- Theme toggle inside the contact panel (mobile) -->

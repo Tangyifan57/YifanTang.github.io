@@ -1,115 +1,53 @@
-<div align="center">
+# Yifan Tang · 唐逸钒
 
-<a href="https://larrysimingdeng.github.io">
-  <img src=".github/assets/banner.svg" alt="Siming Deng, personal academic website" width="100%">
-</a>
+Personal academic website built with Jekyll and hosted on GitHub Pages.
 
-<a href="https://larrysimingdeng.github.io"><img alt="Live site" src="https://img.shields.io/badge/Live-larrysimingdeng.github.io-011F5B?style=flat-square&logo=githubpages&logoColor=white"></a>
-<img alt="Jekyll" src="https://img.shields.io/badge/Jekyll-4.2-990000?style=flat-square&logo=jekyll&logoColor=white">
-<img alt="Ruby" src="https://img.shields.io/badge/Ruby-3.3-011F5B?style=flat-square&logo=ruby&logoColor=white">
-<a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-990000?style=flat-square"></a>
+## 在线编辑
 
-</div>
+无需安装软件。打开对应文件，点击铅笔 **Edit this file**，修改后点击 **Commit changes**。
 
-## Overview
+| 要更新的内容 | 文件 |
+| --- | --- |
+| 姓名、邮箱、Scholar 链接、导航、网址 | `_config.yml` |
+| 首页个人介绍、研究兴趣、联系方式 | `index.md` |
+| 论文、作者、DOI、发表状态 | `_data/publications.yml` |
+| 教育背景、导师 | `_data/education.yml` |
+| 动态 | `_data/news.yml` |
+| 研究内容 | `research.md` |
+| 网页版 CV | `cv.md` |
+| 下载版 CV | `assets/files/Yifan_Tang_CV.pdf` |
+| 头像 | `images/yifan-avatar.svg`（可改为自己的照片，并在 `_config.yml` 修改 avatar） |
+| 个人样式 | `assets/css/yifan.css` |
 
-This repository contains the source of [larrysimingdeng.github.io](https://larrysimingdeng.github.io), the personal website of **Siming Deng (Larry Deng)**, graduate student at the [Department of Electrical and Systems Engineering](https://www.ese.upenn.edu/), [Penn Engineering](https://www.seas.upenn.edu/), University of Pennsylvania. His work sits at the intersection of AI agents, AI infrastructure, ML systems, and statistics.
+详细操作与新增论文示例请看 [EDITING_GUIDE.md](EDITING_GUIDE.md)。
 
-| Page | Route | Content |
-|---|---|---|
-| About Me | `/` | Bio and research focus, news grid, work-experience timeline |
-| Publications | `/publications/` | Peer-reviewed papers with covers and links |
-| Beyond Research | `/hobbies/` | Life outside the lab |
+## GitHub Pages 首次上线
 
-## Preview
+当前仓库为项目站点，默认地址：`https://tangyifan57.github.io/YifanTang.github.io/`。
 
-<table>
-  <tr>
-    <td width="50%"><img src=".github/assets/preview-light.png" alt="Homepage in light mode"></td>
-    <td width="50%"><img src=".github/assets/preview-dark.png" alt="Homepage in dark mode"></td>
-  </tr>
-  <tr>
-    <td align="center"><sub>Light</sub></td>
-    <td align="center"><sub>Dark</sub></td>
-  </tr>
-</table>
+打开仓库 **Settings → Pages → Build and deployment**：
 
-## Design
+1. Source 选择 **Deploy from a branch**。
+2. Branch 选择 **main**，目录选择 **/(root)**。
+3. 点击 **Save**，在 **Actions** 查看构建结果，等候页面提供正式访问链接。
 
-- **UPenn-style header.** Two-tier sticky header with a frosted-glass blur and an oversized Penn wordmark.
-- **Dark mode.** Follows your system theme automatically. A manual toggle is remembered across visits, until you change your system theme — then the site tracks the OS again.
-- **Living timeline.** Entries light up as they scroll into view; the current role carries a Penn-red pulse.
-- **Scroll-reveal cards.** News and publication cards fade in as they enter the viewport.
-- **Deliberate typography.** System sans for display, PT Serif for long-form reading.
-- **Mobile-tuned.** Responsive layout with a compact fixed header and touch-friendly cards.
-- **No frameworks.** Plain HTML, CSS and JavaScript on top of Jekyll.
+后续提交 Markdown/YAML 修改后，GitHub Pages 自动重新构建。
 
-The site uses the official Penn palette: Penn Blue for structure (headings, links, the timeline) and Penn Red as a scarce accent (the heading underline, the current-role pulse). Dark mode swaps in lighter tints of both to preserve contrast.
+若将仓库改名为 `Tangyifan57.github.io`，请同时把 `_config.yml` 中 `baseurl` 改为 `""`；不要只改仓库名。
 
-<img src=".github/assets/palette.svg" alt="Palette: Penn Blue #011F5B, Penn Red #990000, Sky Blue #6EA8FF, Signal Red #E5484D" width="100%">
+## 本地预览（可选）
 
-## Deployment
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset=".github/assets/pipeline-dark.svg">
-  <img src=".github/assets/pipeline-light.svg" alt="Pipeline: content written in Markdown, built by Jekyll, deployed by GitHub Pages, served to the visitor" width="100%">
-</picture>
-
-Edit Markdown, push to `main`, and GitHub Pages rebuilds and publishes the site, usually within a minute.
-
-## Local development
-
-Requires Ruby 3.3 (see `.ruby-version`) and Bundler.
+安装 Ruby 和 Bundler 后：
 
 ```bash
-git clone https://github.com/LarrySimingDeng/larrysimingdeng.github.io.git
-cd larrysimingdeng.github.io
-
 bundle install
-bundle exec jekyll serve --livereload
-# http://127.0.0.1:4000
+bundle exec jekyll serve
 ```
 
-> [!TIP]
-> Comment out the `url:` field in `_config.yml` while previewing locally so absolute URLs resolve to `localhost` instead of production.
+访问终端提示的网址（保留 `/YifanTang.github.io/` 路径）。
 
-## Project structure
+## 内容说明
 
-```
-.
-├── _config.yml        # site title, owner info, top navigation
-├── _includes/         # head, footer and shared partials
-├── _layouts/          # page template, theme toggle, timeline logic
-├── assets/
-│   ├── css/main.css   # palette, header, timeline, dark mode styles
-│   └── js/            # interactions and vendor scripts
-├── images/            # photos, logos, paper thumbnails
-├── index.md           # About Me: bio, news, experience timeline
-├── publications.md    # publication cards
-└── hobbies.md         # Beyond Research
-```
+内容依据 2026-11-24 提供的 CV 整理。在审稿件单列；不展示影响因子或未经核实的指标。公开 PDF 仅保留专业联系邮箱和城市，未包含个人手机号及详细地址。
 
-## Customization
-
-Everything personal sits in a handful of files:
-
-| What | Where |
-|---|---|
-| Name, avatar, email, social links | `_config.yml`, `owner:` section |
-| Top navigation | `_config.yml`, `links:` section |
-| Bio, news, experience timeline | `index.md` |
-| Publications | `publications.md` |
-| Photos and thumbnails | `images/` |
-| Colors, typography, animations | `assets/css/main.css` |
-
-### Analytics
-
-GoatCounter is configured under `goatcounter:` in `_config.yml`. The tracker loads only when the visitor's hostname exactly matches `goatcounter.hostname`; changing `url:` alone does not enable tracking on a fork or preview domain. Remove the `goatcounter:` section to disable analytics.
-
-When forking, set **both** `endpoint` and `hostname` to your own GoatCounter site and production hostname. Never keep the original endpoint while changing the hostname.
-
-If older forks already send traffic to your endpoint, create a new site in GoatCounter's **Settings → Sites**, then update `endpoint` here and deploy. Keep the old site for historical reference: this guard cannot update existing forks. GoatCounter [does not store the pageview's domain by default](https://www.goatcounter.com/help/domains), so historical visits sharing the same path cannot be accurately separated by domain.
-
-## License
-
-Code is released under the [MIT License](LICENSE). Site content (text, photos and publication material) © Siming Deng.
+保留 MIT 模板许可，见 [LICENSE](LICENSE) 与 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。

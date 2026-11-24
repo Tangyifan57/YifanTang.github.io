@@ -1,0 +1,22 @@
+- institution: Sun Yat-sen University
+  initials: SYSU
+  degree: Ph.D. Student · Energy and Power Engineering
+  school: School of Advanced Energy
+  dates: Sep. 2025 – Present
+  advisors: Prof. Fujun Niu
+  details: Lithium/sodium compensation, cathode stabilization, and electrode interfaces.
+  current: true
+- institution: Ningbo University
+  initials: NBU
+  degree: M.S. · Materials Science
+  school: School of Materials Science and Chemical Engineering
+  dates: Sep. 2022 – Jun. 2025
+  advisors: Prof. Lei Han and Dr. Guochang Li
+  details: MOF-derived anodes, interfacial chemistry, and sodium-storage mechanisms.
+- institution: University of South China
+  initials: USC
+  degree: B.S. · Material Forming and Control Engineering
+  school: School of Mechanical Engineering
+  dates: Sep. 2018 – Jun. 2022
+  advisors: Prof. Hongmei Zhu
+  details: Laser additive manufacturing of TiC-reinforced CoCrNi medium-entropy alloys.

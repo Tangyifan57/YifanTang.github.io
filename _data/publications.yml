@@ -1,0 +1,66 @@
+- id: bi-mosse
+  title: Interface Reconstruction in Bi/MoSSe Heterostructure Toward Fast-Chargeable Sodium-Ion Batteries
+  authors: Y. Tang#, H. Sheng#, L. Han*, G. Xu, Y. Wang, X. Fu, J. Qian, Z. Tian*, G. Li*
+  journal: Advanced Functional Materials
+  year: 2026
+  volume: '36'
+  article: e76533
+  doi: 10.1002/adfm.76533
+  role: Co-first author
+  selected: true
+  material: Bi/MoSSe
+  topic: Interface reconstruction
+  status: published
+- id: cu-bi
+  title: Single Atomic Cu–C₃ Sites Catalyzed Interfacial Chemistry in Bi@C for Ultra-Stable and Ultrafast Sodium-Ion
+    Batteries
+  authors: G. Li#, Y. Tang#, Y. Wang, S. Cui, H. Chen, Y. Hu, H. Pang*, L. Han*
+  journal: Angewandte Chemie International Edition
+  year: 2025
+  volume: '64'
+  article: e202417602
+  doi: 10.1002/anie.202417602
+  role: Co-first author · Hot Paper
+  selected: true
+  material: Cu–C₃ / Bi@C
+  topic: Interfacial catalysis
+  status: published
+- id: fe-mo
+  title: Synergistic Effects of Confinement Structure and Local-Expanded Interlayer Spacing in Fe₂Mo₃O₈@C@MoS₂
+    Toward High-Efficient Sodium Ion Storage
+  authors: Y. Tang, G. Li*, S. Cui, W. Cui, H. Chong, L. Han, H. Pang*
+  journal: Advanced Functional Materials
+  year: 2024
+  volume: '34'
+  article: '2403351'
+  doi: 10.1002/adfm.202403351
+  role: First author
+  selected: true
+  material: Fe₂Mo₃O₈@C@MoS₂
+  topic: Confinement & interlayer engineering
+  status: published
+- id: ni-zn
+  title: Synergistic Engineering of Carbon Nanotubes Threaded NiSe₂/Co₃Se₄ Quantum Dots with Rich Se Vacancies
+    for High-Rate Nickel–Zinc Batteries
+  authors: G. Li, Y. Tang, S. Cui, H. Chen, H. Chong, L. Han*, H. Pang*
+  journal: Advanced Functional Materials
+  year: 2024
+  volume: '34'
+  article: '2401586'
+  doi: 10.1002/adfm.202401586
+  role: Co-author
+  selected: false
+  material: NiSe₂/Co₃Se₄
+  topic: Vacancy & quantum-dot engineering
+  status: published
+- id: presodiation
+  title: Coupling Sodium Compensation with Surface Oxygen Stabilization via a Chalcogenide-Anion Presodiation
+    Additive for High-Energy Sodium-ion Batteries
+  authors: Y. Tang, Z. Li, T. Xin, Z. Xu, H. Chen, F. Niu*
+  journal: Advanced Energy Materials
+  year: 2026
+  role: First author
+  selected: false
+  material: Presodiation
+  topic: Ion compensation & oxygen stabilization
+  status: under-review

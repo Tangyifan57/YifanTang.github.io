@@ -1,0 +1,3 @@
+<div class="news-list">
+{% for item in site.data.news %}<div class="news-entry"><time>{{ item.date }}</time><p>{{ item.text }}</p></div>{% endfor %}
+</div>

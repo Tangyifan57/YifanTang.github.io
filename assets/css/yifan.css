@@ -1,0 +1,54 @@
+/* Personal overrides. Keep the upstream theme in main.css. */
+:root{--yifan-green:#07563f;--yifan-muted:#52615d}
+html{scroll-padding-top:145px}body{font-size:16px}
+.skip-to-main{position:absolute;left:16px;top:-60px;z-index:9999;background:#fff;padding:10px}.skip-to-main:focus{top:10px}
+.sysu-logo{width:260px;height:auto;display:block;padding:2px 0}
+.header-cv{font-family:Inter,Arial,sans-serif;font-size:17px;font-weight:700}
+[data-theme="dark"] .sysu-logo{background:#fff;border-radius:4px;padding:6px}
+.header-nav a.is-current,.header-nav a:hover{color:var(--yifan-green)}
+.article-wrap h1,.article-wrap h2,.article-wrap h3{color:var(--yifan-green)}
+.article-wrap h1::after,.article-wrap h2::after{background:var(--yifan-green)}
+.article-wrap p,.article-wrap li{font-size:1rem;line-height:1.8}
+.profile-card{float:right;width:206px;margin:0 0 22px 32px;padding:26px 18px 22px;border:1px solid #e0e7e4;border-radius:8px;background:#f5f8f6;text-align:center;box-sizing:border-box}
+.profile-card img{display:block;margin:0 auto 18px;border-radius:50%}
+.profile-card strong{display:block;font-family:Georgia,serif;font-size:25px;color:#07563f}
+.profile-card span{display:block;font-size:19px;letter-spacing:.25em;margin:5px 0 14px;color:#314f42}
+.profile-card small{font-size:14px;line-height:1.6;color:#52615d;display:block}
+.profile-links{display:flex;flex-wrap:wrap;gap:8px 20px}.profile-links a{font-size:15px;font-weight:600}
+.clear-float{clear:both}
+.timeline-item .institution-mark{font:700 13px Inter,Arial,sans-serif;color:#07563f;background:#f2f7f4;border:2px solid #c7d9cf;box-shadow:none;line-height:1}
+.timeline-item--current.in-view .timeline-dot{animation:none;box-shadow:0 0 0 5px #edf3ef}
+.timeline-card{padding:16px 20px}.timeline-role{font-size:17px}.timeline-time{font-size:14px;color:#66736e}
+.degree-name{font-size:16px;font-weight:500;margin:4px 0}.timeline-details{font-size:14px!important;line-height:1.75;color:#616965}
+.publication-mark{flex:0 0 180px;min-height:155px;background:#eff5f1;padding:24px 18px;display:flex;flex-direction:column;justify-content:center;gap:10px;box-sizing:border-box;border-right:1px solid #dfe8e2}
+.publication-mark span{font:500 14px Inter,Arial,sans-serif;letter-spacing:.08em;color:#52685d}
+.publication-mark strong{font-family:Georgia,serif;font-size:21px;line-height:1.4;color:#07563f;overflow-wrap:anywhere}
+.publication-mark small{font-size:14px;line-height:1.5;color:#52685d}
+.publication-info{min-width:0}.publication-title{font-size:17px!important;line-height:1.5}.publication-authors,.publication-conference{font-size:14px!important;line-height:1.65}
+.publication-details,.author-note{font-size:14px!important;line-height:1.6}.author-note{color:#66716b}
+.manuscript{padding:22px;border-left:3px solid #07563f;background:#f4f7f5;font-size:16px;line-height:1.85}.review-label{font-weight:600;color:#775820}
+.news-entry{display:grid;grid-template-columns:105px 1fr;gap:15px;padding:16px 0;border-bottom:1px solid #e8ece9}.news-entry time{font-size:14px;color:#52615d;padding-top:4px}.news-entry p{margin:0}
+.site-footer{text-align:center;font-size:14px!important;line-height:1.9!important}.site-footer span{font-size:13px}
+:focus-visible{outline:3px solid #568c72;outline-offset:4px}
+[data-theme="dark"] .article-wrap h1,[data-theme="dark"] .article-wrap h2,[data-theme="dark"] .article-wrap h3{color:#d6ebe0}
+[data-theme="dark"] .profile-card,[data-theme="dark"] .manuscript{background:#202a25;border-color:#3b4b42}
+[data-theme="dark"] .profile-card strong,[data-theme="dark"] .profile-card span{color:#d5e9dd}
+[data-theme="dark"] .profile-card small,[data-theme="dark"] .timeline-details,[data-theme="dark"] .timeline-time,[data-theme="dark"] .author-note{color:#b3beb7}
+[data-theme="dark"] .publication-mark{background:#23362c;border-color:#3b4b42}
+[data-theme="dark"] .publication-mark strong{color:#c5e3d1}
+[data-theme="dark"] .publication-mark span,[data-theme="dark"] .publication-mark small,[data-theme="dark"] .news-entry time{color:#b9c9bf}
+[data-theme="dark"] .institution-mark{background:#263a2d;color:#d0e9d8;border-color:#557561}
+[data-theme="dark"] .timeline-item--current.in-view .timeline-dot{box-shadow:none}
+[data-theme="dark"] .news-entry{border-color:#3b4b42}
+[data-theme="dark"] .review-label{color:#e6c88a}
+@media(max-width:768px){html{scroll-padding-top:125px}.sysu-logo{width:220px}#main article{padding:0 22px}.timeline-header{align-items:flex-start}.timeline-time{white-space:normal}.publication-mark{flex-basis:145px}}
+@media(max-width:480px){.sysu-logo{width:210px}.header-container{padding:8px 14px 0}.header-nav a{font-size:14px;letter-spacing:0;text-transform:none}.header-nav a:not(:last-child)::after{margin:0 7px}.header-spacer{height:108px}.header-logo{margin-left:auto}.mobile-avatar-wrapper{margin-left:0}.profile-card{float:none;width:100%;margin:0 0 24px;padding:20px}.profile-card img{width:76px;height:76px;margin-bottom:12px}.profile-card small br{display:none}.profile-card small br::after{content:' '}.profile-card span{margin-bottom:8px}.publication-card{flex-direction:column}.publication-mark{flex-basis:auto;min-height:100px;border-right:0;border-bottom:1px solid #dfe8e2;padding:18px 20px;gap:5px}.publication-mark strong{font-size:21px}.timeline-card{padding:14px}.timeline-header{flex-direction:column;gap:4px}.timeline-dot{width:45px!important;height:45px!important}.timeline-item{padding-left:60px!important}.news-entry{grid-template-columns:1fr;gap:5px}.profile-links{justify-content:center;gap:10px 14px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+.publications-grid{grid-template-columns:1fr;gap:18px}.publication-card{display:flex;opacity:1;transform:none}.publication-card:hover{transform:none}.publication-thumb{flex:0 0 180px;aspect-ratio:auto;min-height:155px}.publication-info{flex:1}
+
+.scholar-word{font:600 15px Inter,Arial,sans-serif}.timeline-item .institution-mark{border-color:#9db9a8;box-shadow:none}
+@media(max-width:480px){.timeline{padding-left:58px}.timeline-item{padding-left:0!important}.publication-thumb{flex-basis:auto;aspect-ratio:16/9}}
+[data-theme="dark"] .mobile-contact-item{color:#e2e7e3}
+[data-theme="dark"] .mobile-contact-item:hover{color:#fff;background:rgba(255,255,255,.08)}
+@media(max-width:480px){.profile-card small br{display:block}.profile-card small br::after{content:none}}

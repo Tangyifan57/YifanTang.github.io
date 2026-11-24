@@ -1,49 +1,44 @@
-title: Siming Deng
-# Comment out url when working locally to resolve base urls correctly
-url: https://larrysimingdeng.github.io
-
-# Keep this hostname separate from url so forks do not inherit live tracking.
-# When reusing this site, change BOTH values to your own GoatCounter site/domain.
-goatcounter:
-  endpoint: https://larrysimingdeng-clean.goatcounter.com/count
-  hostname: larrysimingdeng.github.io
-
-# Default social-share preview image (Open Graph / Twitter card). Lives in /images/.
-og_image: og-cover.jpg
-
-# Owner/author information
+title: Yifan Tang
+url: "https://tangyifan57.github.io"
+baseurl: "/YifanTang.github.io"
+description: "Yifan Tang — Ph.D. student at Sun Yat-sen University researching lithium/sodium compensation and electrode interfaces for high-energy batteries."
+repository: Tangyifan57/YifanTang.github.io
+og_image: yifan-social.png
 owner:
-  name: Siming Deng
-  avatar: avatar.jpg
-  email: siming_deng_stat@163.com
-  github: LarrySimingDeng
-  linkedin: larry-deng-317b92360
-  scholar: https://scholar.google.com/citations?hl=en&user=aKyLtgsAAAAJ
-  researchgate: https://www.researchgate.net/profile/Siming-Deng-3
-
-# https://search.google.com/search-console/ownership
-google_verify: "SkiyuGpJOKT74vv5GmXLvYXXDkXy4v8VWPtbelYz3Hs"
-
-# Links to include in top navigation
+  name: Yifan Tang
+  chinese_name: 唐逸钒
+  avatar: yifan-avatar.svg
+  bio: Ph.D. Student · Sun Yat-sen University
+  email: tangyf57@mail2.sysu.edu.cn
+  github: Tangyifan57
+  scholar: https://scholar.google.com/citations?user=ytSlTN0AAAAJ&hl=en
+  cv: /assets/files/Yifan_Tang_CV.pdf
 links:
   - title: About Me
     url: /
+  - title: Research
+    url: /research/
   - title: Publications
     url: /publications/
-  - title: Beyond Research
-    url: /hobbies/
-
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone: China/Beijing
-future: true
+  - title: CV
+    url: /cv/
+timezone: Asia/Shanghai
+future: false
 highlighter: rouge
-
-# https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /:categories/:title
-
+markdown: kramdown
 kramdown:
+  input: GFM
   auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  enable_coderay: false
+  syntax_highlighter: rouge
+exclude:
+  - README.md
+  - EDITING_GUIDE.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+  - package.json
+  - scripts
+  - LICENSE
+  - THIRD_PARTY_NOTICES.md
