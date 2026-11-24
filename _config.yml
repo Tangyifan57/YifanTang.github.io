@@ -18,11 +18,9 @@ owner:
 links:
 - title: About Me
   url: /
-- title: Research
-  url: /research/
 - title: Publications
   url: /publications/
-- title: Life
+- title: BEYOND RESEARCH
   url: /life/
 - title: CV
   url: /cv/

@@ -10,11 +10,15 @@ permalink: /cv/
 Ph.D. Student · School of Advanced Energy, Sun Yat-sen University<br>
 Shenzhen, China · [tangyf57@mail2.sysu.edu.cn](mailto:tangyf57@mail2.sysu.edu.cn)
 
-[Download CV (PDF)]({{ site.owner.cv | relative_url }}) · [Google Scholar]({{ site.owner.scholar }}) · [ResearchGate]({{ site.owner.researchgate }})
+<p class="profile-links"><a href="{{ site.owner.cv | relative_url }}" download="Yifan_Tang_CV.pdf">Download CV (PDF)</a><a href="{{ site.owner.scholar }}">Google Scholar</a><a href="{{ site.owner.researchgate }}">ResearchGate</a></p>
 
 ## Education
 
 {% include education.html %}
+
+## Work Experience
+
+{% include experience.html %}
 
 ## Research Experience
 

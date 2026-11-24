@@ -21,7 +21,7 @@ Previously, I received my master’s degree from Ningbo University, advised by P
 
 </section>
 
-<p class="profile-links"><a href="mailto:{{ site.owner.email }}">Email</a><a href="{{ site.owner.scholar }}">Google Scholar</a><a href="{{ site.owner.researchgate }}">ResearchGate</a><a href="{{ site.owner.cv | relative_url }}">Download CV (PDF)</a></p>
+<p class="profile-links"><a href="{{ site.owner.scholar }}">Google Scholar</a><a href="{{ site.owner.researchgate }}">ResearchGate</a><a href="{{ '/cv/' | relative_url }}">View CV</a></p>
 
 <div class="clear-float"></div>
 

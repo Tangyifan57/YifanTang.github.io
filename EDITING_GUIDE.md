@@ -34,7 +34,7 @@ YAML 使用空格缩进，不要使用 Tab。包含冒号的文字用英文双�
 
 头像在 `images/yifan-portrait.webp`，也可以上传 JPG/PNG 后修改 `_config.yml` 中的 `owner.avatar`。首页、页头和手机联系菜单会共用这个配置。
 
-生活照在 `images/life/`，页面文字与图片顺序在 `_data/life.yml`；导航中的 Life 打开独立的生活照片页。
+生活照在 `images/life/`，页面文字与图片顺序在 `_data/life.yml`；导航中的 BEYOND RESEARCH 打开独立的生活照片页。
 
 三个学校校标在 `images/schools/`，在 `_data/education.yml` 的 `logo` 字段中对应学校。
 
@@ -50,7 +50,9 @@ YAML 使用空格缩进，不要使用 Tab。包含冒号的文字用英文双�
 
 ## 更新 CV
 
-网页 CV 在 `cv.md`。下载 PDF 在 `assets/files/Yifan_Tang_CV.pdf`；上传新版同名 PDF 即可替换。两份需要分别更新。上传前检查手机号和详细地址是否希望公开。
+首页的 View CV 链接跳转到 `cv.md` 对应的 `/cv/` 页面，Download CV (PDF) 入口放在 CV 页面。下载 PDF 在 `assets/files/Yifan_Tang_CV.pdf`；上传新版同名 PDF 即可替换。网页 CV 和 PDF 需要分别维护。上传前检查手机号和详细地址是否希望公开。
+
+Research 不出现在顶部导航中；从首页 Research Interests 下方的 Read more about my research 链接进入。该页面仍保留 `/research/` 原网址。
 
 ## 更新动态
 
