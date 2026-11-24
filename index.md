@@ -17,7 +17,7 @@ My research focuses on **prelithiation and presodiation strategies for high-ener
 
 Previously, I received my master’s degree from **Ningbo University**, advised by **Prof. Lei Han and Dr. Guochang Li**. My work explored **MOF-derived electrodes, single-atom-regulated interfacial chemistry, and metal/2D-semiconductor heterostructures** for fast and durable sodium storage.
 
-<p class="profile-links"><a href="mailto:{{ site.owner.email }}">Email</a><a href="{{ site.owner.scholar }}">Google Scholar</a><a href="{{ site.owner.cv | relative_url }}">Download CV (PDF)</a></p>
+<p class="profile-links"><a href="mailto:{{ site.owner.email }}">Email</a><a href="{{ site.owner.scholar }}">Google Scholar</a><a href="{{ site.owner.researchgate }}">ResearchGate</a><a href="{{ site.owner.cv | relative_url }}">Download CV (PDF)</a></p>
 
 <div class="clear-float"></div>
 

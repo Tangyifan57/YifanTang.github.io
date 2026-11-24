@@ -6,7 +6,7 @@ permalink: /publications/
 
 # Publications
 
-Research articles in electrode materials, interfacial chemistry, and alkali-ion compensation. See also my [Google Scholar profile]({{ site.owner.scholar }}).
+First-author, co-first-author, and second-author research articles in battery materials, electrode interfaces, and electrochemical energy storage. See also [Google Scholar]({{ site.owner.scholar }}) and [ResearchGate]({{ site.owner.researchgate }}).
 
 ## Peer-Reviewed Articles
 

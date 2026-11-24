@@ -48,11 +48,37 @@
   volume: '34'
   article: '2401586'
   doi: 10.1002/adfm.202401586
-  role: Co-author
+  role: Second author
   selected: false
   material: NiSe₂/Co₃Se₄
   topic: Vacancy & quantum-dot engineering
   status: published
+- id: "cop-fe2p"
+  title: "Simultaneously Improving Energy Storage and Oxygen Evolution Reaction by Causing Regional Defects in MOF-on-MOF Derived Hollow Se-Doped CoP-Fe₂P Heterojunctions"
+  authors: "S. Cui, Y. Tang, W. Cui, G. Li, X. Xiao, L. Han"
+  journal: "ACS Applied Materials & Interfaces"
+  year: 2024
+  volume: "16"
+  article: "42230–42241"
+  doi: "10.1021/acsami.4c08244"
+  role: "Second author"
+  selected: false
+  material: "Se-doped CoP–Fe₂P"
+  topic: "Defect engineering for energy storage and OER"
+  status: "published"
+- id: "comos4"
+  title: "Self-sacrificing MOF-74 to amorphous CoMoS₄ hollow tube with nanosheet surface for high stability supercapacitors"
+  authors: "S. Cui, Y. Tang, W. Cui, G. Li, X. Xiao, K. Tao, L. Han"
+  journal: "Journal of Alloys and Compounds"
+  year: 2024
+  volume: "1003"
+  article: "175709"
+  doi: "10.1016/j.jallcom.2024.175709"
+  role: "Second author"
+  selected: false
+  material: "Amorphous CoMoS₄"
+  topic: "MOF-derived hollow structures for supercapacitors"
+  status: "published"
 - id: presodiation
   title: Coupling Sodium Compensation with Surface Oxygen Stabilization via a Chalcogenide-Anion Presodiation
     Additive for High-Energy Sodium-ion Batteries

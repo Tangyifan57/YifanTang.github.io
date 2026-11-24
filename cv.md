@@ -10,7 +10,7 @@ permalink: /cv/
 Ph.D. Student · School of Advanced Energy, Sun Yat-sen University<br>
 Shenzhen, China · [tangyf57@mail2.sysu.edu.cn](mailto:tangyf57@mail2.sysu.edu.cn)
 
-[Download CV (PDF)]({{ site.owner.cv | relative_url }}) · [Google Scholar]({{ site.owner.scholar }})
+[Download CV (PDF)]({{ site.owner.cv | relative_url }}) · [Google Scholar]({{ site.owner.scholar }}) · [ResearchGate]({{ site.owner.researchgate }})
 
 ## Education
 
