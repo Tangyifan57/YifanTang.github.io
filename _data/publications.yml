@@ -11,6 +11,64 @@
   material: Bi/MoSSe
   topic: Interface reconstruction
   status: published
+  image: /images/papers/bi-mosse-toc.png
+- id: ni-zinc-orbitals
+  doi: 10.1016/j.jechem.2025.08.099
+  material: P–NiMoO₄/NiSe₂
+  topic: Orbital hybridization in nickel–zinc batteries
+  title: Enhancing energy storage of nickel-zinc battery through comprehensive d-p orbital hybridization regulation
+  authors: G. Li, X. Fu, Y. Tang, S. Cui, Y. Wang, Y. Xu, Y. Hu, L. Han
+  journal: Journal of Energy Chemistry
+  year: 2026
+  volume: '112'
+  issue: null
+  article: 945-954
+  role: Co-author
+  selected: false
+  status: published
+- id: con4-co4
+  doi: 10.1002/adfm.78507
+  material: CoN₄ / Co₄ in Bi
+  topic: Dual-site catalysis for sodium storage
+  title: Coupled CoN₄ Single-Atom and Co₄ Clusters Catalysts in Bi Anodes for Ultrafast and Ultralong Sodium Storage
+  authors: G. Xu, L. Shi, Y. Tang, X. Fu, Y. Wang, J. Li, L. Han, G. Li
+  journal: Advanced Functional Materials
+  year: 2026
+  volume: '36'
+  issue: '86'
+  article: e78507
+  role: Co-author
+  selected: false
+  status: published
+- id: perylene-diimide
+  doi: 10.1016/j.ensm.2026.105322
+  material: PDI–DTMA
+  topic: Aromatic-ring redox in sodium-ion anodes
+  title: Unlocking high-performance aromatic sodium storage in small-molecular perylene diimide anodes
+  authors: Y. Wang, J. Guo, Y. Tang, Y. Xiao, J. Li, G. Li, Q. Zhang, L. Han
+  journal: Energy Storage Materials
+  year: 2026
+  volume: '90'
+  issue: null
+  article: '105322'
+  role: Co-author
+  selected: false
+  status: published
+- id: scalable-presodiation
+  doi: 10.1002/anie.5975631
+  material: Presodiated hard carbon
+  topic: Dry-air-processable presodiation
+  title: A Scalable Presodiation Strategy Enabling Dry‐Air‐Processable Hard Carbon Anodes for High Energy Sodium‐Ion
+    Batteries
+  authors: F. Niu, Z. Cai, Z. Li, X. Kong, Y. Tang, H. Chen, Q. Rong, J. Xiong, S. Shen
+  journal: Angewandte Chemie International Edition
+  year: 2026
+  volume: null
+  issue: null
+  article: e5975631
+  role: Co-author
+  selected: false
+  status: published
 - id: cu-bi
   title: Single Atomic Cu–C₃ Sites Catalyzed Interfacial Chemistry in Bi@C for Ultra-Stable and Ultrafast Sodium-Ion
     Batteries
@@ -25,9 +83,55 @@
   material: Cu–C₃ / Bi@C
   topic: Interfacial catalysis
   status: published
+  image: /images/papers/cu-bi-toc.png
+- id: organic-dad
+  doi: 10.1002/anie.202513887
+  material: NDI–DTMA
+  topic: Organic sodium-ion electrodes
+  title: A Donor–Acceptor‐Donor‐type Organic Molecule as an Effective Electrode to Form Rapid Diffusion Pathway for High‐Performance
+    Sodium‐Ion Batteries
+  authors: Y. Wang, J. Guo, Y. Tang, S. Cui, W. Cui, J. Yang, G. Li, X. Xiao, Q. Zhang, L. Han
+  journal: Angewandte Chemie International Edition
+  year: 2025
+  volume: '64'
+  issue: '40'
+  article: e202513887
+  role: Co-author
+  selected: false
+  status: published
+- id: cose2-vacancies
+  doi: 10.1016/j.cej.2025.162326
+  material: CoSe₂ quantum dots
+  topic: Vacancy engineering for supercapacitors
+  title: Vacancy engineering regulating specific capacitance of supercapacitors in MOF-on-MOF derived CoSe2 quantum dots
+    embedded in carbon and CoSe2 hollow cages
+  authors: S. Cui, Y. Gu, Y. Tang, W. Cui, G. Li, Q. Zhang, L. Han
+  journal: Chemical Engineering Journal
+  year: 2025
+  volume: '512'
+  issue: null
+  article: '162326'
+  role: Co-author
+  selected: false
+  status: published
+- id: ni3se2-doping
+  doi: 10.1021/acsaem.5c00466
+  material: Doped Ni₃Se₂
+  topic: Nickel–zinc battery cathodes
+  title: Boosting High Energy Density for Aqueous Ni–Zn Batteries by Synergetic Engineering of Bimetal Doping and Se
+    Vacancy in Ni₃Se₂
+  authors: X. Fu, S. Cui, M. Xu, G. Li, Y. Tang, W. Cui, X. Xiao, L. Han
+  journal: ACS Applied Energy Materials
+  year: 2025
+  volume: '8'
+  issue: '7'
+  article: 4775-4783
+  role: Co-author
+  selected: false
+  status: published
 - id: fe-mo
-  title: Synergistic Effects of Confinement Structure and Local-Expanded Interlayer Spacing in Fe₂Mo₃O₈@C@MoS₂
-    Toward High-Efficient Sodium Ion Storage
+  title: Synergistic Effects of Confinement Structure and Local-Expanded Interlayer Spacing in Fe₂Mo₃O₈@C@MoS₂ Toward
+    High-Efficient Sodium Ion Storage
   authors: Y. Tang, G. Li*, S. Cui, W. Cui, H. Chong, L. Han, H. Pang*
   journal: Advanced Functional Materials
   year: 2024
@@ -39,9 +143,10 @@
   material: Fe₂Mo₃O₈@C@MoS₂
   topic: Confinement & interlayer engineering
   status: published
+  image: /images/papers/fe-mo-toc.png
 - id: ni-zn
-  title: Synergistic Engineering of Carbon Nanotubes Threaded NiSe₂/Co₃Se₄ Quantum Dots with Rich Se Vacancies
-    for High-Rate Nickel–Zinc Batteries
+  title: Synergistic Engineering of Carbon Nanotubes Threaded NiSe₂/Co₃Se₄ Quantum Dots with Rich Se Vacancies for High-Rate
+    Nickel–Zinc Batteries
   authors: G. Li, Y. Tang, S. Cui, H. Chen, H. Chong, L. Han*, H. Pang*
   journal: Advanced Functional Materials
   year: 2024
@@ -53,35 +158,50 @@
   material: NiSe₂/Co₃Se₄
   topic: Vacancy & quantum-dot engineering
   status: published
-- id: "cop-fe2p"
-  title: "Simultaneously Improving Energy Storage and Oxygen Evolution Reaction by Causing Regional Defects in MOF-on-MOF Derived Hollow Se-Doped CoP-Fe₂P Heterojunctions"
-  authors: "S. Cui, Y. Tang, W. Cui, G. Li, X. Xiao, L. Han"
-  journal: "ACS Applied Materials & Interfaces"
+- id: cop-fe2p
+  title: Simultaneously Improving Energy Storage and Oxygen Evolution Reaction by Causing Regional Defects in MOF-on-MOF
+    Derived Hollow Se-Doped CoP-Fe₂P Heterojunctions
+  authors: S. Cui, Y. Tang, W. Cui, G. Li, X. Xiao, L. Han
+  journal: ACS Applied Materials & Interfaces
   year: 2024
-  volume: "16"
-  article: "42230–42241"
-  doi: "10.1021/acsami.4c08244"
-  role: "Second author"
+  volume: '16'
+  article: 42230–42241
+  doi: 10.1021/acsami.4c08244
+  role: Second author
   selected: false
-  material: "Se-doped CoP–Fe₂P"
-  topic: "Defect engineering for energy storage and OER"
-  status: "published"
-- id: "comos4"
-  title: "Self-sacrificing MOF-74 to amorphous CoMoS₄ hollow tube with nanosheet surface for high stability supercapacitors"
-  authors: "S. Cui, Y. Tang, W. Cui, G. Li, X. Xiao, K. Tao, L. Han"
-  journal: "Journal of Alloys and Compounds"
+  material: Se-doped CoP–Fe₂P
+  topic: Defect engineering for energy storage and OER
+  status: published
+- id: comos4
+  title: Self-sacrificing MOF-74 to amorphous CoMoS₄ hollow tube with nanosheet surface for high stability supercapacitors
+  authors: S. Cui, Y. Tang, W. Cui, G. Li, X. Xiao, K. Tao, L. Han
+  journal: Journal of Alloys and Compounds
   year: 2024
-  volume: "1003"
-  article: "175709"
-  doi: "10.1016/j.jallcom.2024.175709"
-  role: "Second author"
+  volume: '1003'
+  article: '175709'
+  doi: 10.1016/j.jallcom.2024.175709
+  role: Second author
   selected: false
-  material: "Amorphous CoMoS₄"
-  topic: "MOF-derived hollow structures for supercapacitors"
-  status: "published"
+  material: Amorphous CoMoS₄
+  topic: MOF-derived hollow structures for supercapacitors
+  status: published
+- id: trimetallic-phosphide
+  doi: 10.1021/acsanm.4c04382
+  material: ZIF-L-derived phosphides
+  topic: Electrocatalytic water splitting
+  title: Trimetallic Phosphide Nanostructures Derived from In Situ Coated ZIF-L Film for Overall Water Splitting
+  authors: W. Cui, S. Cui, Y. Tang, C. Zhou, G. Li, L. Han
+  journal: ACS Applied Nano Materials
+  year: 2024
+  volume: '7'
+  issue: '20'
+  article: 23860–23870
+  role: Co-author
+  selected: false
+  status: published
 - id: presodiation
-  title: Coupling Sodium Compensation with Surface Oxygen Stabilization via a Chalcogenide-Anion Presodiation
-    Additive for High-Energy Sodium-ion Batteries
+  title: Coupling Sodium Compensation with Surface Oxygen Stabilization via a Chalcogenide-Anion Presodiation Additive
+    for High-Energy Sodium-ion Batteries
   authors: Y. Tang, Z. Li, T. Xin, Z. Xu, H. Chen, F. Niu*
   journal: Advanced Energy Materials
   year: 2026

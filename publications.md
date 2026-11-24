@@ -6,9 +6,12 @@ permalink: /publications/
 
 # Publications
 
-First-author, co-first-author, and second-author research articles in battery materials, electrode interfaces, and electrochemical energy storage. See also [Google Scholar]({{ site.owner.scholar }}) and [ResearchGate]({{ site.owner.researchgate }}).
+Research articles in battery materials, electrode interfaces, electrochemical energy storage, and electrocatalysis. See also [Google Scholar]({{ site.owner.scholar }}) and [ResearchGate]({{ site.owner.researchgate }}).
 
 ## Peer-Reviewed Articles
+
+{% assign published_articles = site.data.publications | where: 'status', 'published' %}
+<p class="publication-summary">{{ published_articles.size }} published journal articles. First-author, co-first-author, and co-author contributions are identified below.</p>
 
 {% include publication-list.html %}
 

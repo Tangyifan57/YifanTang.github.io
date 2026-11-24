@@ -1,13 +1,14 @@
 title: Yifan Tang
-url: "https://tangyifan57.github.io"
-baseurl: "/YifanTang.github.io"
-description: "Yifan Tang — Ph.D. student at Sun Yat-sen University researching lithium/sodium compensation and electrode interfaces for high-energy batteries."
+url: https://tangyifan57.github.io
+baseurl: /YifanTang.github.io
+description: Yifan Tang — Ph.D. student at Sun Yat-sen University researching lithium/sodium compensation and electrode interfaces
+  for high-energy batteries.
 repository: Tangyifan57/YifanTang.github.io
 og_image: yifan-social.png
 owner:
   name: Yifan Tang
   chinese_name: 唐逸钒
-  avatar: yifan-avatar.svg
+  avatar: yifan-portrait.webp
   bio: Ph.D. Student · Sun Yat-sen University
   email: tangyf57@mail2.sysu.edu.cn
   github: Tangyifan57
@@ -15,14 +16,16 @@ owner:
   scholar: https://scholar.google.com/citations?user=ytSlTN0AAAAJ&hl=en
   cv: /assets/files/Yifan_Tang_CV.pdf
 links:
-  - title: About Me
-    url: /
-  - title: Research
-    url: /research/
-  - title: Publications
-    url: /publications/
-  - title: CV
-    url: /cv/
+- title: About Me
+  url: /
+- title: Research
+  url: /research/
+- title: Publications
+  url: /publications/
+- title: Life
+  url: /life/
+- title: CV
+  url: /cv/
 timezone: Asia/Shanghai
 future: false
 highlighter: rouge
@@ -33,13 +36,13 @@ kramdown:
   auto_ids: true
   syntax_highlighter: rouge
 exclude:
-  - README.md
-  - EDITING_GUIDE.md
-  - Gemfile
-  - Gemfile.lock
-  - vendor
-  - node_modules
-  - package.json
-  - scripts
-  - LICENSE
-  - THIRD_PARTY_NOTICES.md
+- README.md
+- EDITING_GUIDE.md
+- Gemfile
+- Gemfile.lock
+- vendor
+- node_modules
+- package.json
+- scripts
+- LICENSE
+- THIRD_PARTY_NOTICES.md

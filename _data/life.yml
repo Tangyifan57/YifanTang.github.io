@@ -1,0 +1,17 @@
+- image: /images/life/on-the-way.webp
+  alt: Yifan Tang seated by a train window
+  caption: On the way
+  width: 1200
+  height: 1600
+- image: /images/life/by-the-coast.webp
+  alt: Yifan Tang standing outdoors with the sea in the background
+  caption: By the coast
+  width: 1200
+  height: 1600
+- image: /images/life/graduate-forum.webp
+  alt: Group photo in front of the Sun Yat-sen University graduate academic forum
+    display
+  caption: At a graduate academic forum
+  width: 1400
+  height: 1050
+  wide: true

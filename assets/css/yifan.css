@@ -54,3 +54,40 @@ html{scroll-padding-top:145px}body{font-size:16px}
 @media(max-width:480px){.profile-card small br{display:block}.profile-card small br::after{content:none}}
 
 .academic-word{font:600 16px Inter,Arial,sans-serif}
+
+
+/* Portrait, full graphical abstracts, and the personal photo gallery. */
+.about-intro p{text-align:justify;text-justify:inter-word;hyphens:auto;font-weight:400}
+.about-intro p strong,.about-intro p b{font-weight:400}
+.profile-card{width:220px;padding:12px 12px 18px}
+.profile-card img.profile-photo{display:block;width:100%;height:auto;border-radius:5px;margin:0 auto 15px;max-width:220px;object-fit:contain}
+.profile-name{font-family:Georgia,serif;font-size:25px;font-weight:400;line-height:1.25;color:#07563f;text-align:center}
+.header-avatar img,.mobile-avatar-img{object-position:center 38%}
+.timeline-dot.institution-mark{background:#fff!important;box-shadow:none;border-color:#d9e3dc!important}
+.timeline-dot.institution-mark img{max-width:none;max-height:none;width:100%;height:100%;object-fit:contain;background:#fff}
+.publication-thumb{flex:0 0 220px;min-height:175px;background:#fff;display:flex;align-items:center;justify-content:center}
+.publication-thumb a{display:flex;align-items:center;justify-content:center;width:100%;height:100%;padding:10px;box-sizing:border-box;border:0}
+.publication-thumb img{width:100%;height:auto;max-height:240px;object-fit:contain;transform:none!important;display:block}
+.publication-thumb:hover img{transform:none}
+.publication-summary{font-size:14px!important;color:#627269}
+.publication-conference{font-style:normal}
+.life-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin:28px 0}
+.life-photo{margin:0;min-width:0;background:#f5f8f6;border:1px solid #e0e7e4;border-radius:8px;overflow:hidden;counter-increment:none}
+.life-photo a{display:block;border:0;line-height:0}
+.life-photo img{display:block;width:100%;height:auto;object-fit:contain}
+.life-photo figcaption{padding:14px 18px;font-size:14px;line-height:1.5;color:#52615d;text-align:left}
+.life-photo figcaption:before{content:none!important}
+.life-photo--wide{grid-column:1/-1}
+[data-theme="dark"] .profile-name{color:#d5e9dd}
+[data-theme="dark"] .life-photo{background:#202a25;border-color:#3b4b42}
+[data-theme="dark"] .life-photo figcaption,[data-theme="dark"] .publication-summary{color:#b9c9bf}
+@media(max-width:768px){.publication-thumb{flex-basis:190px}}
+@media(max-width:480px){
+  .profile-card{display:grid;grid-template-columns:110px minmax(0,1fr);align-items:center;gap:16px;float:none;width:100%;padding:12px;margin:0 0 24px}
+  .profile-card img.profile-photo{width:110px;max-width:100%;margin:0}
+  .profile-name{font-size:23px}.profile-card span{font-size:18px}.profile-card small{font-size:14px}
+  .publication-thumb{flex-basis:auto;min-height:0;aspect-ratio:auto;padding:8px}
+  .publication-thumb img{max-height:260px;width:100%;height:auto}
+  .life-gallery{grid-template-columns:1fr;gap:20px}.life-photo--wide{grid-column:auto}
+  .header-nav{width:100%;overflow-x:auto;white-space:nowrap}.header-nav a{flex-shrink:0}.header-nav a:not(:last-child)::after{margin:0 6px}
+}

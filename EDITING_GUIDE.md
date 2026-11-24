@@ -30,9 +30,17 @@
 
 YAML 使用空格缩进，不要使用 Tab。包含冒号的文字用英文双引号包起来。姓名用 `Y. Tang` 时网页会自动加粗。
 
-## 更换头像
+## 更换头像和图片
 
-在 images 文件夹上传 `yifan-photo.jpg`。将 `_config.yml` 的 `avatar` 改为 `yifan-photo.jpg`。首页 `index.md` 中的头像图片也改为 `/images/yifan-photo.jpg`，把 alt 文字改为 `Yifan Tang`。目前展示的是姓名首字母标识，非本人照片。
+头像在 `images/yifan-portrait.webp`，也可以上传 JPG/PNG 后修改 `_config.yml` 中的 `owner.avatar`。首页、页头和手机联系菜单会共用这个配置。
+
+生活照在 `images/life/`，页面文字与图片顺序在 `_data/life.yml`；导航中的 Life 打开独立的生活照片页。
+
+三个学校校标在 `images/schools/`，在 `_data/education.yml` 的 `logo` 字段中对应学校。
+
+三篇论文 TOC 在 `images/papers/`，通过 `_data/publications.yml` 中的 `image` 字段关联论文。TOC 保持完整显示，点击可查看原尺寸。
+
+首页介绍文字在 `index.md` 的 `about-intro` 区域中编辑；该区域正文使用常规字重并两端对齐。不要删除外层 `<section>` 标记。
 
 ## 更新 CV
 

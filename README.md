@@ -16,7 +16,10 @@ Personal academic website built with Jekyll and hosted on GitHub Pages.
 | 研究内容 | `research.md` |
 | 网页版 CV | `cv.md` |
 | 下载版 CV | `assets/files/Yifan_Tang_CV.pdf` |
-| 头像 | `images/yifan-avatar.svg`（可改为自己的照片，并在 `_config.yml` 修改 avatar） |
+| 头像 | `images/yifan-portrait.webp`（可在 `_config.yml` 修改 avatar） |
+| 生活照片与图注 | `_data/life.yml`、`images/life/` |
+| 学校校标 | `_data/education.yml`、`images/schools/` |
+| 论文 TOC | `_data/publications.yml`、`images/papers/` |
 | 个人样式 | `assets/css/yifan.css` |
 
 详细操作与新增论文示例请看 [EDITING_GUIDE.md](EDITING_GUIDE.md)。

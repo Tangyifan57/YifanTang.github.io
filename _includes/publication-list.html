@@ -3,12 +3,12 @@
 {% if paper.status == 'published' %}
 {% if include.selected != true or paper.selected %}
 <div class="publication-card" id="{{ paper.id }}">
-  {% if paper.image %}<div class="publication-thumb"><img src="{{ paper.image | relative_url }}" alt="Graphical abstract: {{ paper.title | escape }}" loading="lazy"></div>
+  {% if paper.image %}<div class="publication-thumb"><a href="{{ paper.image | relative_url }}" target="_blank" rel="noopener" aria-label="Open graphical abstract for {{ paper.title | escape }}"><img src="{{ paper.image | relative_url }}" alt="Graphical abstract: {{ paper.title | escape }}" loading="lazy"></a></div>
   {% else %}<div class="publication-mark" aria-hidden="true"><span>{{ paper.year }}</span><strong>{{ paper.material }}</strong><small>{{ paper.topic }}</small></div>{% endif %}
   <div class="publication-info">
     <div class="publication-title"><a href="https://doi.org/{{ paper.doi }}" target="_blank" rel="noopener">{{ paper.title }}</a></div>
     <div class="publication-authors">{{ paper.authors | escape | replace: 'Y. Tang', '<strong class="author-highlight">Y. Tang</strong>' }}</div>
-    <div class="publication-conference"><span class="pub-venue">{{ paper.journal }}</span> {{ paper.volume }}, {{ paper.article }} ({{ paper.year }}).</div>
+    <div class="publication-conference"><span class="pub-venue">{{ paper.journal }}</span>{% if paper.volume %} {{ paper.volume }}{% if paper.issue %}({{ paper.issue }}){% endif %},{% endif %}{% if paper.article %} {{ paper.article }}{% endif %} ({{ paper.year }}).</div>
     <div class="publication-details">{{ paper.role }} · <a href="https://doi.org/{{ paper.doi }}" target="_blank" rel="noopener">Paper / DOI</a></div>
   </div>
 </div>

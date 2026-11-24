@@ -1,7 +1,7 @@
 <div class="timeline">
 {% for item in site.data.education %}
 <div class="timeline-item in-view{% if item.current %} timeline-item--current{% endif %}">
-  <div class="timeline-dot institution-mark" aria-hidden="true">{{ item.initials }}</div>
+  <div class="timeline-dot institution-mark">{% if item.logo %}<img src="{{ item.logo | relative_url }}" alt="{{ item.institution }} emblem" width="48" height="48" loading="lazy">{% else %}{{ item.initials }}{% endif %}</div>
   <div class="timeline-card">
     <div class="timeline-header"><div class="timeline-role">{{ item.institution }}</div><span class="timeline-time">{{ item.dates }}</span></div>
     <div class="degree-name">{{ item.degree }}</div>
