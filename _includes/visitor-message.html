@@ -1,0 +1,40 @@
+{% if site.visitor_messages.enabled %}
+{% assign message_mode = 'email' %}
+{% if site.visitor_messages.mode == 'formspree' and site.visitor_messages.formspree_endpoint != '' %}
+{% assign message_mode = 'formspree' %}
+{% endif %}
+<section class="visitor-message" aria-labelledby="visitor-message-heading">
+  <h3 id="visitor-message-heading">Leave a message</h3>
+  <p class="visitor-message-intro">Visiting my website? Feel free to introduce yourself or share a research question. Your message will not be published on this site.</p>
+  <form id="visitor-message-form" class="visitor-message-form" data-mode="{{ message_mode }}" data-recipient="{{ site.owner.email | escape }}" {% if message_mode == 'formspree' %}action="{{ site.visitor_messages.formspree_endpoint | escape }}" method="post"{% else %}action="mailto:{{ site.owner.email | escape }}" method="get"{% endif %} aria-describedby="visitor-message-help" hidden>
+    <div class="visitor-message-grid">
+      <div class="visitor-message-field">
+        <label for="visitor-name">Name <span>(optional)</span></label>
+        <input id="visitor-name" name="name" type="text" autocomplete="name" maxlength="100">
+      </div>
+      <div class="visitor-message-field">
+        <label for="visitor-affiliation">University / organisation <span>(optional)</span></label>
+        <input id="visitor-affiliation" name="affiliation" type="text" autocomplete="organization" maxlength="180">
+      </div>
+    </div>
+    <div class="visitor-message-field">
+      <label for="visitor-email">Email <span>(optional, for a reply)</span></label>
+      <input id="visitor-email" name="email" type="email" autocomplete="email" maxlength="254">
+    </div>
+    <div class="visitor-message-field">
+      <label for="visitor-body">Message</label>
+      <textarea id="visitor-body" name="message" rows="5" required maxlength="2500"></textarea>
+    </div>
+    <div class="visitor-message-trap" aria-hidden="true">
+      <label for="visitor-website">Leave this field empty</label>
+      <input id="visitor-website" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+    </div>
+    <input type="hidden" name="_subject" value="Website visitor message — Yifan Tang">
+    <p id="visitor-message-help" class="visitor-message-help">{% if message_mode == 'formspree' %}This form sends your details and message privately through Formspree to Yifan Tang. No visitor account is needed.{% else %}This opens a draft in your email app. Please send the draft there to deliver your message to Yifan Tang.{% endif %}</p>
+    <button class="visitor-message-submit" type="submit">{% if message_mode == 'formspree' %}Send message{% else %}Open email draft{% endif %}</button>
+    <p class="visitor-message-status" id="visitor-message-status" role="status" aria-live="polite"></p>
+  </form>
+  <noscript><p>Please email <a href="mailto:{{ site.owner.email | escape }}">{{ site.owner.email }}</a> to leave a private message.</p></noscript>
+  <p class="visitor-message-fallback">You can also <a href="mailto:{{ site.owner.email | escape }}">email me directly</a>.</p>
+</section>
+{% endif %}

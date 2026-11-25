@@ -22,6 +22,16 @@ links:
   url: /publications/
 - title: BEYOND RESEARCH
   url: /life/
+# Install the public Web Analytics beacon token from your own Cloudflare account.
+# Leave blank until configured; never put an API key here.
+analytics:
+  cloudflare_token: ""
+# Formspree accepts private submissions without requiring visitors to sign in.
+# Email mode opens a draft in the visitor's email app instead.
+visitor_messages:
+  enabled: true
+  mode: email
+  formspree_endpoint: ""
 timezone: Asia/Shanghai
 future: false
 highlighter: rouge

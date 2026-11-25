@@ -76,6 +76,18 @@ baseurl: "/YifanTang.github.io"
 
 内部图片、导航和文件通过 `relative_url` 自动带项目路径；不要将它们写成不带 baseurl 的 `/images/...` 链接。不要修改模板中已有的 Liquid 标记（`{{ ... }}` 和 `{% ... %}`）。
 
-## 排查
+## 访问统计与自愿留言
+
+访问统计使用你自己账号中的 Cloudflare Web Analytics，后台报表不放在网站上。GitHub Pages 的 hostname 为 `tangyifan57.github.io`，在后台按路径 `/YifanTang.github.io/` 筛选本站。前往 Cloudflare → Web Analytics → Add a site，添加 hostname 后复制安装代码中的公开 beacon token，填入 `_config.yml` 的 `analytics.cloudflare_token`。这里需要的是安装代码中的 token，不是 API 密钥。没有 token 时不加载统计脚本；只有 Jekyll 生产构建才加载脚本，以免本地预览污染统计。统计从启用之后开始，不会补回历史访问。
+
+首页 Contact 下的留言表单让访客自愿填写姓名、单位、回复邮箱和留言；姓名、单位与邮箱均为可选，留言不会公开展示。表单样式在 `assets/css/yifan.css`，逻辑在 `assets/js/visitor-message.js`。
+
+- `visitor_messages.mode: email`：打开访客邮件软件中的草稿，需要访客自己点击发送；网站不会声称已经送达。无需额外账号。
+- `visitor_messages.mode: formspree`：在你自己的 Formspree 账号创建表单，收件邮箱设为你的邮箱，完成邮件验证，再把 `https://formspree.io/f/…` 形式的真实 endpoint 填入 `visitor_messages.formspree_endpoint`。在此之前不要启用该模式。访客无需账号，提交只在服务器返回成功后显示成功提示。为表单开启服务提供的垃圾信息过滤，并在后台确认报表及提交内容没有公共分享。首次启用后需要做一次真实投递测试，以你的收件箱和 Formspree 后台记录确认送达。
+- `visitor_messages.enabled: false`：隐藏表单。
+
+不要把后台登录密码、私有 API 密钥或访客留言写入此公开仓库。生产上只提交公开的 beacon token 和表单 endpoint。
+
+## 构建排查
 
 Settings → Pages 查看部署来源；Actions 查看 pages build and deployment。构建失败时先检查 YAML 缩进、引号和 Markdown 顶部的 `---`。若页面仍旧，等待构建完成后再刷新。所有历史版本保存在 GitHub 提交记录中。

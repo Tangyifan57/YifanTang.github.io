@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About Me
+visitor_messages: true
 description: "Yifan Tang (唐逸钒), Ph.D. student at Sun Yat-sen University. Research in lithium/sodium compensation, electrode interfaces, and high-energy batteries."
 ---
 
@@ -61,3 +62,5 @@ I welcome discussions and research collaborations in alkali-ion compensation, el
 
 **Email:** [tangyf57@mail2.sysu.edu.cn](mailto:tangyf57@mail2.sysu.edu.cn)<br>
 **Affiliation:** School of Advanced Energy, Sun Yat-sen University · Shenzhen, China
+
+{% include visitor-message.html %}
